@@ -11,7 +11,7 @@ noise_factor = 0.4
 x_test_noisy = x_test + noise_factor * np.random.normal(loc=0.0, scale=1.0, size=x_test.shape)
 x_test_noisy = x_test_noisy.clip(0., 1.)
 
-autoencoder = load_model('vae_mnist.h5')
+autoencoder = load_model('ae_mnist.h5')
 decoded_imgs = autoencoder.predict(x_test_noisy)
 
 plt.figure(figsize=(20,8))
