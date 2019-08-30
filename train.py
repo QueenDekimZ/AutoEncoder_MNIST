@@ -37,4 +37,4 @@ autoencoder.fit(x_train_noisy, x_train,
                 shuffle=True,
                 validation_data=(x_test_noisy, x_test))
 
-autoencoder.save('vae_mnist.h5')
+autoencoder.save('ae_mnist.h5')
