@@ -81,4 +81,4 @@ autoencoder.fit(x_train_noisy, x_train,
                 validation_steps=None,
                 callbacks=[history])
 history.loss_plot('epoch')
-autoencoder.save('vae_mnist.h5')
+autoencoder.save('ae_mnist.h5')
